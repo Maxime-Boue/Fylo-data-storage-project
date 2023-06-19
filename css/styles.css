@@ -1,0 +1,146 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    height: 100vh;
+}
+
+main {
+    height: 50vh;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50%;
+
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.content,
+.content__capacity {
+    background-color: hsl(228, 56%, 26%);
+    padding: 3em;
+    margin-top: -8em;
+    border-radius: 0.5em;
+    height: 250px;
+}
+
+.content {
+    margin-right: 2em;
+    border-top-right-radius: 8em;
+    padding-right: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.content__title {
+    margin-bottom: 2em;
+}
+
+
+.content__upload {
+
+    display: flex;
+}
+
+.content__upload-btn {
+
+    background-color: hsl(229, 57%, 11%);
+    border: none;
+    border-radius: 0.8em;
+    padding: 1em; 
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+.content__upload-btn:not(:first-child) {
+
+    margin-left: 1em;
+
+}
+
+.content__form {
+
+    width: 30%;
+}
+
+.content__capacity {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__capacity-rest {
+    text-align: right;
+    background-color: white;
+    color: hsl(229, 7%, 55%);
+    padding: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.content__capacity-rest--value {
+    color: hsl(229, 57%, 11%);;
+    font-size: 2.5rem;
+    margin-right: 0.3em;
+}
+
+#content__capacity-range {
+    margin: 1.5em;
+    -webkit-appearance: none;
+    height: 10px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 0.5em 0;
+}
+
+#content__capacity-range::-webkit-slider-runnable-track {
+  /* width: 100%; */
+  height: 15px;
+  cursor: pointer;
+  margin: 0.2em;
+    border-radius: 50px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#content__capacity-range::-webkit-slider-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.bold {
+
+    font-weight: bold;
+}
+
+.content__capacity-minmax {
+    display: flex;
+    justify-content: space-between;
+}
+
+
